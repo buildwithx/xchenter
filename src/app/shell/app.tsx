@@ -1,9 +1,13 @@
+import { AppHeader } from '@/components/app-header';
 import { Outlet } from 'react-router';
 
 export default function App() {
   return (
     <div>
-      <Outlet />
+      <AppHeader />
+      <main className="mt-14">
+        <Outlet />
+      </main>
     </div>
   );
 }
